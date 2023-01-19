@@ -10,4 +10,5 @@ let Data={
 }
 formdata.push(Data)
 localStorage.setItem("data",JSON.stringify(formdata))
+window.location.href="http://127.0.0.1:5500/sign-in.html"
 })
