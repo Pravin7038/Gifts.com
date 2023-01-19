@@ -35,7 +35,22 @@ img{
 .icon{
     margin-left: 200px;
     margin-top: 20px;
-
+}
+.icon img{
+    width: 30px;
+}
+#login a:link{
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    text-decoration: unset;
+}
+#logout{
+    text-align: center;
+}
+#cart a:link{
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    text-decoration: unset;
 }
 .search{
     display: flex;
@@ -121,7 +136,11 @@ h1{
     font-family: LatoMedium,sans-serif;
     
 }
-#Bottom{
+#Bottom>div>h3{
+    padding-left: 0px;
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
 
 }
 #Bottom>div>p{
@@ -142,6 +161,9 @@ h1{
     background-color: #663399;
 }
 #logout:hover{
+    cursor: pointer;
+}
+#Card>div:hover{
     cursor: pointer;
 }
 
