@@ -109,6 +109,21 @@ function displayData(){
         price.textContent = ele.price
         product.append(image,name,price)
         Card.append(product)
+        product.addEventListener("click",()=>{
+            window.location.href = "http://127.0.0.1:5500/product.html"
+            let productName=[]
+            productName.push({name:ele.name});
+           
+            localStorage.setItem("product",JSON.stringify(productName));
+
+            let productPrice=[]
+            productPrice.push({price:ele.price});
+            localStorage.setItem("Price",JSON.stringify(productPrice));
+
+            let ProductImg=[]
+            ProductImg.push({image:ele.img});
+            localStorage.setItem("Image",JSON.stringify(ProductImg));
+        })
     })
  
 
@@ -120,7 +135,7 @@ displayData(Data);
     if(loginInfo==""){
         displayData(Data);
     }else{
-        loginDone.innerHTML= ""
+     loginDone.innerHTML= ""
      let logout = document.createElement("h3");
      let LogoutDone = document.getElementById("logout");
      logout.textContent="Logout"
@@ -130,7 +145,7 @@ displayData(Data);
         loginInfo = "";
         localStorage.setItem("done",JSON.stringify(loginInfo));
         location.reload();
-})
+   })
     }
 
 
