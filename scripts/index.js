@@ -115,6 +115,26 @@ function displayData(){
 //  product.append(image,name,price)
 }
 displayData(Data);
+    let loginDone = document.getElementById("login")
+    let loginInfo = JSON.parse(localStorage.getItem("done"));
+    if(loginInfo==""){
+        displayData(Data);
+    }else{
+        loginDone.innerHTML= ""
+     let logout = document.createElement("h3");
+     let LogoutDone = document.getElementById("logout");
+     logout.textContent="Logout"
+     LogoutDone.append(logout)
+
+    LogoutDone.addEventListener("click",()=>{
+        loginInfo = "";
+        localStorage.setItem("done",JSON.stringify(loginInfo));
+        location.reload();
+})
+    }
+
+
+
 
 
 

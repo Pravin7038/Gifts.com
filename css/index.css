@@ -141,6 +141,9 @@ h1{
 .BottomSection{
     background-color: #663399;
 }
+#logout:hover{
+    cursor: pointer;
+}
 
 
 

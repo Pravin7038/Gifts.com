@@ -1,10 +1,9 @@
 // let Login = document.getElementById("sign-in");
-let loginName = document.getElementById("login-name")
-console.log(loginName)
 let data = JSON.parse(localStorage.getItem("data"));
 console.log(data)
 let formEl = document.querySelector("form")
 let formdata = []
+let obj = JSON.parse(localStorage.getItem("done"))||"";
 formEl.addEventListener("submit",(e)=>{
     e.preventDefault();
     let Data = {
@@ -19,6 +18,7 @@ formEl.addEventListener("submit",(e)=>{
 
          if((formdata[i].email===data[j].email) && (formdata[i].password===data[j].password)){
            flag=true;
+            obj = data[j].firstName;
             break;
          }
         }
@@ -26,8 +26,7 @@ formEl.addEventListener("submit",(e)=>{
     if(flag===true){
         window.open(
             "http://127.0.0.1:5500/index.html", "_blank");
-        console.log(loginName.innerHTML)
-        
+            localStorage.setItem("done",JSON.stringify(obj))
       }else{
        alert("Wrong Credentials")
       }   
