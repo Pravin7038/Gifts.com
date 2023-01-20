@@ -123,6 +123,10 @@ function displayData(){
             let ProductImg=[]
             ProductImg.push({image:ele.img});
             localStorage.setItem("Image",JSON.stringify(ProductImg));
+            
+            let array = []
+            array.push({name:ele.name,price:ele.price,image:ele.img})
+            localStorage.setItem("cart",JSON.stringify(array));
         })
     })
  

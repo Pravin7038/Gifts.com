@@ -1,0 +1,91 @@
+#container{
+    width: 100%;
+    
+    /* display: flex;
+    justify-content: center; */
+}
+.brands{
+    width: 90%;
+    display: inline-flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* border: solid red; */
+}
+img{
+    width: 6%;
+}
+#bar{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 100px;
+}
+#logo>img{
+    width: 200px;
+    margin-top: 20px;
+
+}
+#SearchTab{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    /* border: solid red; */
+    
+}
+.icon{
+    /* margin-left: 200px; */
+   width: 20%;
+   height: 90px;
+}
+#login p{
+    margin-top: 0px;
+}
+#cart p{
+    margin-top: 0px;
+}
+#login a:link{
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    text-decoration: unset;
+}
+#logout{
+    text-align: center;
+}
+#cart a:link{
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    text-decoration: unset;
+}
+.search{
+    display: flex;
+    width: 50%;
+    margin-left: 100px;
+
+}
+.search>input{
+    width: 500px;
+    font-size: 30px;
+    text-align: center;
+}
+.search>input::placeholder{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.search>button{
+    width: 150px;
+    font-weight: bold;
+    background-color: #663399;
+    color: white;
+}
+.icon{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+.icon img{
+    padding-right: 20px;
+    width: 50px;
+}
