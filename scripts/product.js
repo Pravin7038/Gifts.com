@@ -1,5 +1,4 @@
 let data = JSON.parse(localStorage.getItem("product"))
-console.log(data)
 let Name = document.getElementById("Name")
 data.forEach((element,index) => {
     let h2 = document.createElement("h2")
@@ -57,15 +56,16 @@ function displayData(){
         price.textContent = ele.price
         product.append(image,name,price)
         Slider.append(product)
-        console.log(product)
     })
 
 //  product.append(image,name,price)
 }
 displayData(Data);
 
-
-
-right.addEventListener("click",()=>{
-    
+let addCart = document.getElementById("addCart");
+let cartData = JSON.parse(localStorage.getItem("cart"))||[]
+addCart.addEventListener("click",()=>{
+    localStorage.setItem("cart",JSON.stringify(cartData))
+    alert("added successfully")
+    console.log(cartData)
 })
