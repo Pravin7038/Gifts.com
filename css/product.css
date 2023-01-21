@@ -19,8 +19,7 @@ img{
 #bar{
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    margin-bottom: 20px;
-    height: 100px;
+    height: 130px;
 }
 #logo>img{
     width: 200px;
@@ -30,36 +29,37 @@ img{
     display: flex;
     align-items: center;
     margin: auto;
-    justify-content: space-between;
+    width: 80%;
     /* border: solid red; */
     
 }
 .search{
     display: flex;
-    width: 50%;
-    margin-left: 100px;
+    width: 70%;
+    margin-left: 15%;
+    border: 1px solid #e8eaec;
 
 }
 .search>input{
-    width: 500px;
-    font-size: 30px;
-    text-align: center;
+    width: 80%;
+    height: 30px;
 }
 .search>input::placeholder{
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    text-decoration: unset;
 }
 .search>button{
     width: 150px;
     font-weight: bold;
     background-color: #663399;
     color: white;
+    border: none;
 }
 .icon{
     display: flex;
-    width: 300px;
-    justify-content: space-around;
+    width: 40%;
+    justify-content: flex-end;
 }
 .icon img{
     padding-right: 20px;
@@ -74,6 +74,31 @@ img{
     font-family: LatoMedium,sans-serif;
     font-weight: 400;
     text-decoration: unset;
+}
+#cart{
+    margin: 10px;
+}
+#login{
+    margin: 10px;
+}
+#login img{
+    width: 40px;
+}
+#cart img{
+    width: 30px;
+}
+#catg{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-bottom: 20px;
+}
+#catg h3{
+    font-family: LatoBold, sans-serif;
+    font-size: min(1.2vw, 0.95rem);
+    color: rgb(47, 47, 47);
 }
 #top-section{
     display: flex;
@@ -176,6 +201,17 @@ h1{
     margin: auto;
     height: 370px;
 }
+.nametag{
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.pricetag{
+    font-family: LatoMedium,sans-serif;
+    margin-top: 0px;
+}
 .prod:hover{
     cursor: pointer;
 }
@@ -187,28 +223,16 @@ h1{
 }
 #mid1{
     display: flex;
+    margin-bottom: 30px;
 }
-#right{
-    width: 10%;
-    font-size: 20px;
+#parentcard{
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
-#left{
-    text-align: center;
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-}
-#left:hover{
-    cursor: pointer;
-}
-#right:hover{
-    cursor: pointer;
-}
+/* #mid1>div{
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+} */
 #mid-section h1{
     text-align: center;
 }

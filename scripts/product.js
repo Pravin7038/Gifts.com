@@ -13,7 +13,7 @@ image.forEach((element,index) => {
     large.append(image)
 });
 
-let Data = [
+let DATA = [
   {
       img : "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/161132lx.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}",
       name : "Blooming Love™",
@@ -41,18 +41,19 @@ let Data = [
   }
 
 ]
-let right = document.getElementById("right");
-let left = document.getElementById("left");
 let Slider = document.getElementById("slider")
+let parent = document.getElementById("mid-section")
 function displayData(){
-    Data.forEach((ele,index)=>{
+    DATA.forEach((ele,index)=>{
         let product = document.createElement("div");
         product.setAttribute("class", "prod");
         let image = document.createElement("img")
         image.src = ele.img
         let name = document.createElement("h3")
+        name.setAttribute("class","nametag")
         name.textContent = ele.name
         let price = document.createElement("h3")
+        price.setAttribute("class","pricetag")
         price.textContent = ele.price
         product.append(image,name,price)
         Slider.append(product)
@@ -60,12 +61,27 @@ function displayData(){
 
 //  product.append(image,name,price)
 }
-displayData(Data);
+displayData(DATA);
 
 let addCart = document.getElementById("addCart");
 let cartData = JSON.parse(localStorage.getItem("cart"))||[]
 addCart.addEventListener("click",()=>{
-    localStorage.setItem("cart",JSON.stringify(cartData))
+    localStorage.setItem("cartdata",JSON.stringify(cartData))
     alert("added successfully")
-    console.log(cartData)
 })
+
+let loginDone = document.getElementById("login")
+    let loginInfo = JSON.parse(localStorage.getItem("done"));
+    if(loginInfo!==""){
+        loginDone.innerHTML= ""
+        let logout = document.createElement("h3");
+        let LogoutDone = document.getElementById("logout");
+        logout.textContent="Logout"
+        LogoutDone.append(logout)
+   
+       LogoutDone.addEventListener("click",()=>{
+           loginInfo = "";
+           localStorage.setItem("done",JSON.stringify(loginInfo));
+           location.reload();
+      })
+       }

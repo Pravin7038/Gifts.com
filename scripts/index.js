@@ -104,8 +104,10 @@ function displayData(){
         let image = document.createElement("img")
         image.src = ele.img
         let name = document.createElement("h3")
+        name.setAttribute("class","nametag")
         name.textContent = ele.name
         let price = document.createElement("h3")
+        price.setAttribute("class","pricetag")
         price.textContent = ele.price
         product.append(image,name,price)
         Card.append(product)
