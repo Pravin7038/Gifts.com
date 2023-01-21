@@ -28,13 +28,13 @@ img{
     display: flex;
     align-items: center;
     margin: auto;
-    justify-content: space-between;
-    /* border: solid red; */
-    
+    justify-content: space-around;
+    width: 80%;
 }
 .icon{
-    margin-left: 200px;
-    margin-top: 20px;
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
 }
 .icon img{
     width: 30px;
@@ -54,34 +54,53 @@ img{
 }
 .search{
     display: flex;
-    width: 50%;
-    margin-left: 100px;
-
+    width: 70%;
+    margin-left: 15%;
+    border: 1px solid #e8eaec;
 }
 .search>input{
-    width: 500px;
-    font-size: 30px;
-    text-align: center;
+    width: 80%;
+    height: 30px;
 }
 .search>input::placeholder{
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    text-decoration: unset;
 }
 .search>button{
     width: 150px;
     font-weight: bold;
     background-color: #663399;
     color: white;
-}
-.icon{
-    display: flex;
-    width: 300px;
-    justify-content: space-around;
+    border: none;
 }
 .icon img{
     padding-right: 20px;
     width: 50px;
+}
+#cart{
+    margin: 10px;
+}
+#login{
+    margin: 10px;
+}
+#login img{
+    width: 40px;
+}
+#cart img{
+    width: 30px;
+}
+#catg{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#catg h3{
+    font-family: LatoBold, sans-serif;
+    font-size: min(1.2vw, 0.95rem);
+    color: rgb(47, 47, 47);
 }
 
 #more {
@@ -94,11 +113,18 @@ img{
     /* justify-content: left; */
     align-items: center;
 }
+#title{
+    display: flex;
+}
 .heading>div{
     width: 45%;
 }
 #para{
     width: 100%;
+}
+#para button{
+    background-color: #663399;
+    color: white;
 }
 p{
     line-height: 25px;
@@ -120,9 +146,20 @@ h1{
     gap: 15px;
     margin-top: 50px;
 }
+.nametag{
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
 .prod img{
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.pricetag{
+    font-family: LatoMedium,sans-serif;
+    margin-top: 0px;
 }
 #details{
     width: 90%;
