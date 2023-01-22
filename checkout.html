@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/cart.css">
+    <title>Proceed to checkout</title>
+    <link rel="stylesheet" href="./css/checkout.css">
 </head>
 <body>
     <div id="container">
@@ -27,27 +27,23 @@
                     <img src="Gifts.com.png" alt="">
                 </div>
                 <div id="SearchTab"> 
+
                     <div class="search">
                         <form>
                             <input placeholder="search" type="text" id="search" />
                             <input type="submit" value="Search" id="searchbtn" />
                           </form>
-                        
                     </div>
-
                     <div class="icon">
                         
                         <div id="login"><a href="./sign-in.html" target="popup" onclick="window.open('./sign-in.html','name','width=700,height=600')"><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt88337dc20d1d8278/5e178293942caf0fc36b77ab/Header-Icon-PWA-profile.svg" alt="">
                             <p id="login-name">Sign In</p></a>
-                            
                         </div>
                         <div id="logout"></div>
                         <div id="cart"><a href="./cart.html"><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt7888ec93d3d5c1ec/5e17829300c38f0f022d3646/Header-Icon-PWA-bag.svg?height=25&width=44" alt=""><br>
                         <p>Cart</p></a>
                             
                         </div>
-                        
-                        
                     </div>
                 </div>
                     
@@ -69,36 +65,32 @@
                 <h3>COMMUNITY</h3>
             </div>
         </div>
-        <div>
-            <h1 id="empty"></h1>
+        <div id="placed"></div>
+        <div id="cont">
+            <div id="card">
+                    <p>Sending To</p>
+                    <input type="text" placeholder="Enter Resident address" id="First-Name">
+                    <p>First Name</p>
+                    <input type="text" placeholder="Enter First Name" id="Last-Name">
+                    <p>Last Name</p>
+                    <input type="text" placeholder="Enter Last Name" id="email">
+                    <p>Pin Code</p>
+                    <input type="number" placeholder="Enter Pin Code" id="pass"><br>
+                    <p>District</p>
+                    <input type="text" placeholder="Enter District" id="pass"><br>
+                    <p>State</p>
+                    <input type="text" placeholder="Enter State" id="pass"><br>
+                    <p>Country</p>
+                    <input type="text" placeholder="Enter Country" id="pass"><br>
+                    <p>Date</p>
+                    <input type="date" placeholder="Enter Delivery Date" id="pass"><br>
+                    <p>Phone Number</p>
+                    <input type="number" placeholder="Enter Phone Number" id="pass"><br>
+                    <input type="submit" name="" value="Submit" id="button"><br>
+            </div>
         </div>
-        <div id="qtycontainer">
-            <span>QTY:</span>
-           <select name="qty" id="qty">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-           </select>
         </div>
-        <div id="cart-container">
-            
-        </div>
-        <hr>
-        <div id="mid-section">
-            <h1>Best Seller</h1>
-            <div id="mid1">
-                <div id="slider"></div>
-        </div>
-</div>
-        </div>
+ 
 </body>
-<script src="./scripts/cart.js"></script>
+<script src="./scripts/checkout.js"></script>
 </html>
