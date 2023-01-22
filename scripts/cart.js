@@ -1,11 +1,13 @@
 let cartData = JSON.parse(localStorage.getItem("cartdata"))||[]
 console.log(cartData)
+let qtydiv = document.getElementById("qtycontainer")
 if(cartData ===[]){
     empty.textContent = "Your cart is empty"
     display(cartData)
 }
 let container = document.getElementById("cart-container")
 let empty = document.getElementById("empty")
+
 function display(data){
     container.innerHTML = "";
     cartData.forEach((product) => {
@@ -32,9 +34,14 @@ function display(data){
                 return ele.name!==product.name
             })
             empty.textContent = "Your cart is empty"
+            qtydiv.innerHTML = ""
             localStorage.setItem("cartdata",JSON.stringify(cartData))
             display(cartData)
         });
+        checkout.addEventListener("click",()=>{
+            window.open(
+                "http://127.0.0.1:5500/checkout.html", "_blank");
+        })
         card.append(image)
         card2.append(name,price,remove,checkout)
         parentcard.append(card,card2)

@@ -1,5 +1,9 @@
+body{
+    background-color: #FAFAFA;
+}
 #container{
     width: 100%;
+    
     /* display: flex;
     justify-content: center; */
 }
@@ -22,7 +26,6 @@ img{
 #logo>img{
     width: 200px;
     margin-top: 20px;
-
 }
 #SearchTab{
     display: flex;
@@ -30,18 +33,14 @@ img{
     margin: auto;
     justify-content: space-around;
     width: 80%;
-    
 }
 .icon{
     display: flex;
     width: 40%;
     justify-content: flex-end;
 }
-#login p{
-    margin-top: 0px;
-}
-#cart p{
-    margin-top: 0px;
+.icon img{
+    width: 30px;
 }
 #login a:link{
     font-family: LatoMedium,sans-serif;
@@ -79,6 +78,10 @@ form {
   #searchbtn:hover{
     cursor: pointer;
 }
+.icon img{
+    padding-right: 20px;
+    width: 50px;
+}
 #cart{
     margin: 10px;
 }
@@ -99,120 +102,63 @@ form {
     width: 90%;
     margin: auto;
     justify-content: space-around;
-    margin-bottom: 20px;
 }
 #catg h3{
     font-family: LatoBold, sans-serif;
     font-size: min(1.2vw, 0.95rem);
     color: rgb(47, 47, 47);
 }
-#cart-container{
-    width: 90%;
-    display: flex;
+#cont{
+    width: 100%;
+}
+#card{
+    width: 50%;
     margin: auto;
     justify-content: center;
-    background-color: #FAFAFA;
-}
-#parentcard{
-    width: 50%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-#parentcard>.card2{
-    width: 60%;
-}
-#check{
-    margin-top: 50%;
-}
-.card1{
+    align-content: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     background-color: white;
+    margin-top: 20px;
 }
-
-.card1 img{
-    width: 100%;
+#card{
+    padding-top: 10px;
+    margin-top: 20px;
+    padding-left: 40px;
+    margin-right: 0px;
+    position: absolute;
+    left: 30%;
+    
 }
-.card2>h3{
-    font-size: 18px;
+#card input{
+    width: 70%;
+    font-size: 20px;;
 }
-.card2>button{
-    display: block;
-    background-color: #61C278;
-    border: #61C278;
-    color: white;
-    padding: 10px 10px 10px 10px;
-    border-radius: 5px;
-}
-.card2>button:hover{
-    cursor: pointer;
-}
-.card2{
-    padding-left: 20px;
-    width: 20%;
-    background-color: white;
-}
-.card2 h4{
+#card p{
     font-family: LatoMedium,sans-serif;
     font-weight: 400;
+    text-decoration: unset;
     line-height: 1.43;
+    margin-bottom: 0px;
 }
-.card2 h3{
-    font-family: LatoMedium,sans-serif;
-    line-height: 1.43;
-}
-#parentcard{
-    display: flex;
-}
-#empty{
-    text-align: center;
-}
-hr{
-    width: 90%;
-}
-h1{
+#card input ::placeholder{
     font-family: LatoMedium,sans-serif;
     font-weight: 400;
+    text-decoration: unset;
     line-height: 1.43;
 }
-#slider{
-    display: flex;
-    width:90%;
-    margin: auto;
-    margin-bottom: 40px;
-}
-.prod{
-    width: 19%;
-    margin: auto;
-    height: 370px;
-}
-.prod>h3{
-    font-family: LatoMedium,sans-serif;
-    line-height: 1.43;
-}
-.prod:hover{
-    cursor: pointer;
-}
-.prod img{
-    width: 100%;
-}
-.prod h2{
-    width: 100%;
-}
-#mid1{
-    display: flex;
-}
-#mid-section h1{
-    text-align: center;
-}
-#qtycontainer{
-    text-align: center;
-    margin-bottom: 15px;
-    font-family: LatoMedium,sans-serif;
-    font-weight: 400;
-    line-height: 1.43;
-    color: #663399;
-}
-#qty{
-    height: 30px;
-    width: 50px;
+#card #button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
     background-color: #663399;
     color: white;
+    border: none;
+    height: 40px;
+}
+#placed{
+    text-align: center;
+    font-family: LatoMedium,sans-serif;
+    font-weight: 400;
+    text-decoration: unset;
+    line-height: 1.43;
 }

@@ -97,7 +97,24 @@ function myFunction() {
 
   ]
 let products = document.getElementById("container")
-function displayData(){
+let container = document.getElementById("Card")
+let searchForm = document.querySelector("form");
+searchForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    container.innerHTML = ""
+    let searchParams = searchForm.search.value;
+    console.log(searchParams)
+    let filtered = Data.filter((element) => {
+      if (
+        element.name.toUpperCase().includes(searchParams.toUpperCase()) ===true) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    displayData(filtered);
+  });
+function displayData(Data){
     Data.forEach((ele,index)=>{
         let product = document.createElement("div");
         product.setAttribute("class", "prod");
@@ -153,6 +170,7 @@ displayData(Data);
         location.reload();
    })
     }
+   
 
 
 

@@ -54,25 +54,26 @@ img{
 }
 .search{
     display: flex;
-    width: 70%;
-    margin-left: 15%;
-    border: 1px solid #e8eaec;
+    text-align: center;
+    margin-left: 90px;
 }
-.search>input{
-    width: 80%;
-    height: 30px;
-}
-.search>input::placeholder{
-    font-family: LatoMedium,sans-serif;
-    font-weight: 400;
-    text-decoration: unset;
-}
-.search>button{
-    width: 150px;
-    font-weight: bold;
+form {
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 700px;
+  }
+  form input {
+    font-size: 25px;
+    width: 65%;
+  }
+  #searchbtn{
     background-color: #663399;
     color: white;
-    border: none;
+    width: 25%;
+  }
+  #searchbtn:hover{
+    cursor: pointer;
 }
 .icon img{
     padding-right: 20px;
@@ -90,12 +91,14 @@ img{
 #cart img{
     width: 30px;
 }
+.catg-container{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
 #catg{
     display: flex;
-    width: 100%;
+    width: 90%;
     margin: auto;
     justify-content: space-around;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 #catg h3{
     font-family: LatoBold, sans-serif;
